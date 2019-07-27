@@ -1,9 +1,9 @@
-# Applikasi Backend untuk nokenku.com
+### Applikasi Backend untuk nokenku.com
 -----------------------------------------------------------------
 
-### Develop :
+## Develop :
 
-### Michael:
+# Michael:
 
 # Hari Jumat 7/27/2019
   - Install Django dan DRF

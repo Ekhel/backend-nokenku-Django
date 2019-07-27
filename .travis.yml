@@ -1,14 +1,21 @@
-dist: bionic
+dist: xenial
 language: python
 
 python:
   - "3.7"
 
-virtualenv:
-  system_site_packages: true
+services:
+  - postgresql
+
+env:
+  - DJANGO_VERSION=2.2.3
+
+before_script:
+  - psql -c 'create database nokenku;' -U postgres
 
 install:
   - pip install -r requirements.txt
 
 script:
-  - pytest
+  - python manage.py migrate
+  - python manage.py test
