@@ -1,9 +1,41 @@
-### Applikasi Backend untuk nokenku.com
------------------------------------------------------------------
+# Sistem Digital Perikanan Terintegrasi
+----------------------------------------------------
 
-## Develop :
+### Back End Applikasi
 
-# Michael:
+## System Requirements :
+* Bahasa Utama :
+  - Python
+  - Version 3.6
 
-# Hari Jumat 7/27/2019
-  - Install Django dan DRF
+* Framework :
+  - Django
+
+* Database :
+  - PostgreSQL
+
+* Services :
+  - Docker
+  - travis-ci
+
+* Library :
+  - Django Rest Framework (DRF)
+
+* Template :
+  - Admin Pro (materialdesign)
+----------------------------------------------------
+
+## Develop
+
+### Michael :
+
+* Selasa 30 Juli 2019:
+  - Buat Project Django
+  - Instalasi requirements.txt
+  - Memasang CI menggunakan https://travis-ci.org
+  - Menambahkan dan Mengkonfigurasi File docker
+  - Menambahkan Template
+  - Install DRF(djangorestframework)
+  - Membuat Modul users Cumstom User
+  - Migrasi Database dan Menggunakan Database PostgreSQL
+  - Menambahkan Halaman Login
