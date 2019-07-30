@@ -10,6 +10,8 @@
 
 * Framework :
   - Django
+  - Version 2.2.3
+  - Docker Version 2.2.3 - 3.0
 
 * Database :
   - PostgreSQL
