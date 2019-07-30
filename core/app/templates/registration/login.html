@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    {% if title %}
+      <title> Django Blog - {{ title }}</title>
+    {% else %}
+        <title> Nokenku.com</title>
+    {% endif %}
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/adminpro-custon-icon.css">
+    <link rel="stylesheet" href="/static/css/meanmenu.min.css">
+    <link rel="stylesheet" href="/static/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <link rel="stylesheet" href="/static/css/jvectormap/jquery-jvectormap-2.0.3.css">
+    <link rel="stylesheet" href="/static/css/data-table/bootstrap-table.css">
+    <link rel="stylesheet" href="/static/css/data-table/bootstrap-editable.css">
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/c3.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body class="materialdesign">
+    <!-- login Start-->
+  </br>
+  <div class="login-form-area mg-t-30 mg-b-40">
+   <div class="container-fluid">
+       <div class="row">
+           <div class="col-lg-4">
+              {% if forms.errors %}
+              <p>Password dan Username Anda Salah</p>
+              {% endif %}
+
+              {% if next %}
+              <p>Anda Tidak Bisa Mengakses Halaman ini</p>
+              {% endif %}
+           </div>
+           <form id="adminpro-form" class="adminpro-form" method="post" action="{% url 'login' %}">
+               <div class="col-lg-4">
+                   <div class="login-bg">
+                       {% csrf_token %}
+                       <div class="row">
+                           <div class="col-lg-12">
+                               <div class="logo">
+                                   <a href="#"><img src="/static/img/logo/login-logo.png" alt="" />
+                                   </a>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-lg-12">
+                               <div class="login-title">
+                                   <h1>Login Form</h1>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-lg-4">
+                               <div class="login-input-head">
+                                   <p>Username</p>
+                               </div>
+                           </div>
+                           <div class="col-lg-8">
+                               <div class="login-input-area">
+                                   {{ form.username }}
+                                   <i class="fa fa-envelope login-user" aria-hidden="true"></i>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-lg-4">
+                               <div class="login-input-head">
+                                   <p>Password</p>
+                               </div>
+                           </div>
+                           <div class="col-lg-8">
+                               <div class="login-input-area">
+                                   {{ form.password }}
+                                   <i class="fa fa-lock login-user"></i>
+                               </div>
+                               <div class="row">
+                                   <div class="col-lg-12">
+                                       <div class="forgot-password">
+                                           <a href="#">Forgot password?</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="col-lg-12">
+                                       <div class="login-keep-me">
+                                           <label class="checkbox">
+                                               <input type="checkbox" name="remember" checked><i></i>Keep me logged in
+                                           </label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-lg-4">
+
+                           </div>
+                           <div class="col-lg-8">
+                               <div class="login-button-pro">
+                                   <button type="submit" class="login-button login-button-rg">Register</button>
+                                   <button type="submit" class="login-button login-button-lg">Log in</button>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </form>
+           <div class="col-lg-4"></div>
+       </div>
+   </div>
+</div>
+    <!-- login End-->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.meanmenu.js"></script>
+    <script src="/static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/static/js/jquery.sticky.js"></script>
+    <script src="/static/js/jquery.scrollUp.min.js"></script>
+    <script src="/static/js/wow/wow.min.js"></script>
+    <script src="/static/js/counterup/jquery.counterup.min.js"></script>
+    <script src="/static/js/counterup/waypoints.min.js"></script>
+    <script src="/static/js/counterup/counterup-active.js"></script>
+    <script src="/static/js/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="/static/js/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="/static/js/jvectormap/jvectormap-active.js"></script>
+    <script src="/static/js/peity/jquery.peity.min.js"></script>
+    <script src="/static/js/peity/peity-active.js"></script>
+    <script src="/static/js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="/static/js/sparkline/sparkline-active.js"></script>
+    <script src="/static/js/flot/Chart.min.js"></script>
+    <script src="/static/js/flot/dashtwo-flot-active.js"></script>
+    <script src="/static/js/data-table/bootstrap-table.js"></script>
+    <script src="/static/js/data-table/tableExport.js"></script>
+    <script src="/static/js/data-table/data-table-active.js"></script>
+    <script src="/static/js/data-table/bootstrap-table-editable.js"></script>
+    <script src="/static/js/data-table/bootstrap-editable.js"></script>
+    <script src="/static/js/data-table/bootstrap-table-resizable.js"></script>
+    <script src="/static/js/data-table/colResizable-1.5.source.js"></script>
+    <script src="/static/js/data-table/bootstrap-table-export.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>

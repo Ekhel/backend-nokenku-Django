@@ -4,12 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard v.2.0 | Adminpro - Admin Template</title>
+    {% if title %}
+      <title> Django Blog - {{ title }}</title>
+    {% else %}
+        <title> Nokenku.com</title>
+    {% endif %}
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/font-awesome.min.css">
     <link rel="stylesheet" href="/static/css/adminpro-custon-icon.css">
     <link rel="stylesheet" href="/static/css/meanmenu.min.css">
@@ -390,7 +394,7 @@
     <script src="/static/js/sparkline/jquery.sparkline.min.js"></script>
     <script src="/static/js/sparkline/sparkline-active.js"></script>
     <script src="/static/js/flot/Chart.min.js"></script>
-    <script src="js/flot/dashtwo-flot-active.js"></script>
+    <script src="/static/js/flot/dashtwo-flot-active.js"></script>
     <script src="/static/js/data-table/bootstrap-table.js"></script>
     <script src="/static/js/data-table/tableExport.js"></script>
     <script src="/static/js/data-table/data-table-active.js"></script>

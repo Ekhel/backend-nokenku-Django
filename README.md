@@ -20,6 +20,7 @@
 
 * Library :
   - Django Rest Framework (DRF)
+  - Django Crispy Forms
 
 * Template :
   - Admin Pro (materialdesign)
@@ -39,3 +40,4 @@
   - Membuat Modul users Cumstom User
   - Migrasi Database dan Menggunakan Database PostgreSQL
   - Menambahkan Halaman Login
+  - Memanbahkan Fungsi Login dan Logout dan Memperbaiki urls app.

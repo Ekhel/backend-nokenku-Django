@@ -3,5 +3,7 @@ from django.http import HttpResponse
 from django.template import loader
 
 def index(request):
+    return render(request,'app/dashboard.html')
 
-    return render(request, 'master/login.html')
+def dashboard(request):
+    return render(request, 'app/dashboard')
