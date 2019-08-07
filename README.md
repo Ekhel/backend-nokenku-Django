@@ -43,3 +43,9 @@
   - Migrasi Database dan Menggunakan Database PostgreSQL
   - Menambahkan Halaman Login
   - Memanbahkan Fungsi Login dan Logout dan Memperbaiki urls app.
+
+* Rabu 8 Agustus 2019:
+  - Menambahkan models(Provinsi, Kabupaten, jenisikan, Nelayan, hasil_laut) [Solved]
+  - Menambahkan Class Page Pada admin.py (Provinsi, Kabupaten, jenisikan, Nelayan, hasil_laut) [Solved]
+  - Create Migrations [Solved]
+  - Create Migrate [Not Solved]
