@@ -1,21 +1,11 @@
-dist: xenial
 language: python
-
 python:
-  - "3.7"
+  - "3.6"
 
 services:
-  - postgresql
+  - docker
 
-env:
-  - DJANGO_VERSION=2.2.3
-
-before_script:
-  - psql -c 'create database nokenku;' -U postgres
-
-install:
-  - pip install -r requirements.txt
+before_script: pip install docker-compose
 
 script:
-  - python manage.py migrate
-  - python manage.py test
+  - docker-compose run app sh -c "python manage.py test && flake8"
