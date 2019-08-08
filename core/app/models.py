@@ -39,11 +39,21 @@ class Hasil_laut(models.Model):
     id_hasil = models.AutoField(primary_key=True)
     ikan = models.OneToOneField(Jenisikan, on_delete=models.CASCADE)
     ukuran = models.CharField(max_length=20)
-    harga = models.DecimalField(..., max_digits=10, decimal_places=3)
+    harga = models.DecimalField(max_digits=10, decimal_places=2)
     status = models.CharField(max_length=10)
-    min_order = models.DecimalField(..., max_digits=5, decimal_places=2)
-    stock = models.DecimalField(..., max_digits=5, decimal_places=2)
+    min_order = models.DecimalField(max_digits=5, decimal_places=2)
+    stock = models.DecimalField(max_digits=5, decimal_places=2)
     photo = models.ImageField(default='default.jpg', upload_to='hasil')
 
+
+class Rekening(models.Model):
+    id_rekening = models.AutoField(primary_key=True)
+    nama_bank = models.CharField(max_length=150)
+    nama_rek = models.CharField(max_length=40)
+    nomor_rek = models.CharField(max_length=30)
+    gambar = models.ImageField(default='default.jpg', upload_to='rek')
+
     def __str__(self):
-        return self.ikan
+        return self.nama_bank
+
+

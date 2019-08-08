@@ -49,3 +49,8 @@
   - Menambahkan Class Page Pada admin.py (Provinsi, Kabupaten, jenisikan, Nelayan, hasil_laut) [Solved]
   - Create Migrations [Solved]
   - Create Migrate [Not Solved]
+
+* Kamis 9 Agustus 2019:
+  - Menambahkan models(hasil_laut, Rekening) [Solved]
+  - Menambahkan app frontend [Solved]
+  - Menambahkan models order pada app frontend (frontend/models/order) [Solved]
