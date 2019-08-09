@@ -1,10 +1,7 @@
 (function ($) {
  "use strict";
 
-		/*----------------------------
-		 jQuery MeanMenu
-		------------------------------ */
-		jQuery('nav#dropdown').meanmenu();	
+		
 		
 		
 		
@@ -23,7 +20,6 @@
 			
 		$('#sidebarCollapse').on('click', function () {
 			$("body").toggleClass("mini-navbar");
-			SmoothlyMenu();
 		});
 		
 		/*-----------------------------
@@ -87,7 +83,10 @@
 			});
 			
 			
-			
+			/*----------------------------
+		 jQuery MeanMenu
+		------------------------------ */
+		jQuery('nav#dropdown').meanmenu();	
 		
 		// Collapse Chat function
 			$('.chat-icon-link').on('click', function () {
