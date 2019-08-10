@@ -54,3 +54,8 @@
   - Menambahkan models(hasil_laut, Rekening) [Solved]
   - Menambahkan app frontend [Solved]
   - Menambahkan models order pada app frontend (frontend/models/order) [Solved]
+
+* Sabtu 11 Agustus 2019:
+  - Menambahkan Template Login [Solved]
+  - Memperbaiki Fungsi Login dan Redirect dan Logout Redirect url [Solved]
+  - Meperbaiki base_site.html untuk Master Layout [Solved]
