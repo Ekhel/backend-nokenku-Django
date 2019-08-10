@@ -59,3 +59,7 @@
   - Menambahkan Template Login [Solved]
   - Memperbaiki Fungsi Login dan Redirect dan Logout Redirect url [Solved]
   - Meperbaiki base_site.html untuk Master Layout [Solved]
+  - Install lingting pylint member [Solved]
+  - Setting django pylint [Solved]
+  - Menambahkan View Nelayan [Solved]
+  - Menambahkan View Hasil Laut [Solved]

@@ -38,11 +38,12 @@
         <div class="left-sidebar-pro">
             <nav id="sidebar">
                 <div class="sidebar-header">
+                    {% if user.is_authenticated %}
                     <a href="#"><img src="/static/img/message/1.jpg" alt="" />
                     </a>
-                    <h3>Andrar Son</h3>
-                    <p>Developer</p>
+                    <h3>{{ user.username }}</h3>
                     <strong>AP+</strong>
+                    {% endif %}
                 </div>
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
@@ -62,8 +63,8 @@
                         </li>
                         <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa big-icon fa-envelope"></i> <span class="mini-dn">Data Master</span> <span class="indicator-right-menu mini-dn"><i class="fa indicator-mn fa-angle-left"></i></span></a>
                             <div role="menu" class="dropdown-menu left-menu-dropdown animated flipInX">
-                                <a href="#" class="dropdown-item">Hasil Laut</a>
-                                <a href="#" class="dropdown-item">Nelayan</a>
+                                <a href="{% url 'hasillaut' %}" class="dropdown-item">Hasil Laut</a>
+                                <a href="{% url 'datanelayan' %}" class="dropdown-item">Nelayan</a>
                                 <a href="#" class="dropdown-item">Produk</a>
                             </div>
                         </li>
